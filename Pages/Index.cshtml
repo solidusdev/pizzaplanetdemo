@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<main id="index">
+    <div id="container-index">
+        <header>
+            <div>
+                <figure>
+                    <img src="~/img/logo/logo.png" />
+                </figure>
+                <div class="container-text">
+                    <h1>Guaranteed <span class="logo-color-blue">Fresh</span> <br /> Your first slice is <span class="logo-color-green">FREE</span> <span class="logo-color-red">!</span></h1>
+                    <a asp-area="" asp-page="Menu"><span>View Menu</span></a>
+                </div>
+            </div>
+        </header>
+        <footer>
+            <span>&copy; An ASP.NET Core Application. 2022.</span>
+        </footer>
+    </div>
+</main>

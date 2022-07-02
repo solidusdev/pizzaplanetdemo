@@ -1,0 +1,44 @@
+﻿@page
+@model PizzaPlanet.Pages.Checkout.CheckoutModel
+@{
+}
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="~/img/logo/logo.png" class="nav-logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Menu">Menu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+@{
+    var image_path = "~/img/Pizzas/" + (@Model.Image_Title + ".png");
+}
+<div id="checkout" class="text-center mt-4">
+    <h1>Checkout</h1>
+    <div class="align-content-center mt-3">
+        <div class="col-3 mx-auto mb-5">
+            <img src="@image_path" class="w-100" asp-append-version="true" />
+            <p class="mt-4">Your order for the @Model.Pizza_Name Pizza is ready!</p>
+            <p>Your total price for this order is: $@Model.Pizza_Price</p>
+            <a class="btn btn-primary mx-auto mt-2" asp-area="" asp-page="ThankYou">Confirm Order</a>
+        </div>
+    </div>
+    <footer class="mt-5 pb-4">
+        <span>&copy; An ASP.NET Core Application. 2022.</span>
+    </footer>
+</div>

@@ -1,0 +1,60 @@
+﻿@page
+@model PizzaPlanet.Pages.Forms.CustomPizzaModel
+@{
+}
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="~/img/logo/logo.png" class="nav-logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-page="/Menu">Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ </header>
+
+<div id="custom" class="text-center container">
+    <h1>Create Your Pizza</h1>
+    <p>Base Pizza is priced at $12 <br />All ingredients are an additional $1 each</p>
+    <form method="post" class="mx-auto text-lg-start mt-5 mb-5 px-5 pt-4 pb-4 rounded-3 bg-light col-4">
+        <div id="input-container">
+            <input class="input-custom-name" type="text" asp-for="Pizza.Pizza_Name" placeholder="Enter order name" />
+            <br />
+            <p style="margin: 0rem 0 0.4rem 0">Add Ingredients:</p>
+            <input type="checkbox" asp-for="Pizza.Tomato_Sauce" placeholder="Tomato Sauce" /> Tomato Sauce
+            <br />
+            <input type="checkbox" asp-for="Pizza.Cheese" placeholder="Cheese" /> Cheese
+            <br />
+            <input type="checkbox" asp-for="Pizza.Pepperoni" placeholder="Pepperoni" /> Pepperoni
+            <br />
+            <input type="checkbox" asp-for="Pizza.Mushroom" placeholder="Mushroom" /> Mushroom
+            <br />
+            <input type="checkbox" asp-for="Pizza.Tuna" placeholder="Tuna" /> Tuna
+            <br />
+            <input type="checkbox" asp-for="Pizza.Pineapple" placeholder="Pineapple" /> Pineapple
+            <br />
+            <input type="checkbox" asp-for="Pizza.Ham" placeholder="Ham" /> Ham
+            <br />
+            <input type="checkbox" asp-for="Pizza.Beef" placeholder="Beef" /> Beef
+            <br />
+            <img id="custom-slice" src="~/img/Pizzas/Custom.png" alt="custom pizza" />
+        </div>
+        
+        <button class="btn btn-primary mt-4">Checkout</button>
+    </form>
+</div>
+<footer class="mt-5 pb-4 text-center">
+        <span>&copy; An ASP.NET Core Application. 2022.</span>
+</footer>

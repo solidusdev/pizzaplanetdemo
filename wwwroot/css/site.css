@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/*Index--------------------------------------------------------------------*/
+
+#index #container-index {
+    display: flex;
+    height: 100vh;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.13), rgba(0,0,0,0.13)), url(../img/background/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 3rem;
+}
+
+#index #container-index header  {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: initial;
+    height: inherit;
+}
+
+#index #container-index header div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#index #container-index header div figure img {
+    max-width: 300px;
+}
+
+#index #container-index header div .container-text h1 {
+    margin-top: 0.7rem;
+    color: white;
+}
+
+#index #container-index header div .container-text h1 .logo-color-blue {
+    color: rgb(18, 61, 193);
+}
+
+#index #container-index header div .container-text h1 .logo-color-green {
+    color: rgb(139, 243, 31);
+}
+
+#index #container-index header div .container-text h1 .logo-color-red {
+    color: rgb(245, 63, 63);
+    position: relative;
+    right: 5px;
+}
+
+#index #container-index header div .container-text a {
+    margin-top: 1rem;
+    width: fit-content;
+}
+
+#index #container-index header div .container-text a span {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#index #container-index footer {
+    height: 3rem;
+}
+
+#index #container-index footer span {
+    color: white;
+    font-style: italic;
+}
+
+/*Menu--------------------------------------------------------------------*/
+
+.nav-logo {
+    max-width: 140px;
+}
+
+#menu header h1 {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+}
+
+#menu header p {
+    color: grey;
+    font-style: italic;
+}
+
+.container-custom-pizza {
+    background-image: linear-gradient(rgba(0,0,0,0.18), rgba(0,0,0,0.18)), url(../img/background/wood-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+#menu-custom-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#menu-custom-div div img {
+    max-width: 350px;
+}
+
+#menu-custom-div div div {
+    display:inline-block;
+}
+
+#menu-custom-div div div h3 {
+    text-align: left;
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+#menu-custom-div div div p {
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+.custom-pizza-text {
+    color: white;
+}
+
+.pizza-img :hover {
+    transform: scale(1.05);
+}
+
+/*Custom--------------------------------------------------------------------*/
+
+#custom h1 {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+}
+
+#custom form button {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.input-custom-name {
+    padding: 1.5px;
+    display: block !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+#custom form #input-container {
+    position: relative;
+}
+
+#custom-slice {
+    max-width: 105px;
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+
+/*ThankYouPage--------------------------------------------------------------------*/
+
+#final div {
+}
+
+#final #thank-you-logo {
+    max-width: 300px;
+
+}
+
+#final footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*OrdersPage--------------------------------------------------------------------*/
+
